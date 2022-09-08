@@ -1,9 +1,10 @@
 html {
+  box-sizing: border-box;
 }
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+  box-sizing: inherit;
   text-decoration: none;
   color: black;
 }
@@ -14,7 +15,8 @@ body {
 }
 
 header,
-footer {
+footer,
+.middle-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,9 +48,8 @@ footer {
   color: #b4bac0;
 }
 
+/*Nav Bar Stuff*/
 .nav-bar-items {
-  /* flex-direction: row; */
-  /* margin: 2%; */
   margin-top: -0.9%;
 }
 
@@ -61,12 +62,53 @@ footer {
   color: #b4bac0;
 }
 
-.footer-p {
-  position: fixed;
-  height: 60px; /* Height of the footer */
-  bottom: 0;
+/*End of Nav*/
+
+.middle-content {
+  width: 75%;
+  height: 600px;
+  margin-top: 1%;
 }
 
+.inner-container {
+  margin-left: 5%;
+}
+
+.inner-container h2 {
+  font-family: "Playfair Display";
+  font-size: 30px;
+}
+
+.inner-container main {
+  font-family: "Source Sans Pro";
+  list-style: none;
+  margin-left: 1%;
+}
+
+.inner-container main li {
+  text-decoration: none;
+  margin-top: -1%;
+  font-size: 20px;
+}
+
+.inner-container main li a:hover {
+  color: black;
+  transition: 200ms color ease-in;
+}
+
+.inner-container main li a:hover {
+  color: #b4bac0;
+}
+
+.footer-p {
+  /* border: orange 2px solid; */
+  padding-top: 1%;
+  height: 60px; /* Height of the footer */
+}
+
+.summary-context {
+  margin-left: 1%;
+}
 .footer-p,
 .footer-p span {
   font-family: "Source Sans Pro";
