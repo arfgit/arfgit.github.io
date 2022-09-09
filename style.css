@@ -29,6 +29,12 @@ footer,
   letter-spacing: 0.05em;
 }
 
+.typewrites {
+  font-family: "Playfair Display";
+  font-size: 48px;
+  letter-spacing: 0.05em;
+}
+
 .wrap {
   color: black;
 }
@@ -74,6 +80,13 @@ footer,
   margin-left: 5%;
 }
 
+.author {
+  flex: 1;
+  color: #b4bac0;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
 .inner-container h2 {
   font-family: "Playfair Display";
   font-size: 30px;
@@ -88,6 +101,7 @@ footer,
 .inner-container main li {
   text-decoration: none;
   margin-top: -1%;
+  margin-bottom: 1%;
   font-size: 20px;
 }
 
@@ -108,6 +122,8 @@ footer,
 
 .summary-context {
   margin-left: 1%;
+  margin-top: -1%;
+  font-family: "Source Sans Pro";
 }
 .footer-p,
 .footer-p span {
