@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  position: relative;
   background-color: #f2f3f4;
   padding-top: 2em;
 }
@@ -21,6 +22,13 @@ footer,
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .typewrite {
@@ -70,10 +78,17 @@ footer,
 
 /*End of Nav*/
 
-.middle-content {
+/*Homework One CSS*/
+.middle-content,
+.middle-content-p5 {
+  /* border: black 2px solid; */
   width: 75%;
   height: 600px;
   margin-top: 1%;
+}
+
+.middle-content-p5 {
+  height: 1100px;
 }
 
 .inner-container {
@@ -87,6 +102,11 @@ footer,
   margin-left: 5px;
 }
 
+.summary-context {
+  margin-left: 1%;
+  margin-top: -1%;
+  font-family: "Source Sans Pro";
+}
 .inner-container h2 {
   font-family: "Playfair Display";
   font-size: 30px;
@@ -96,6 +116,7 @@ footer,
   font-family: "Source Sans Pro";
   list-style: none;
   margin-left: 1%;
+  margin-top: -1.75%;
 }
 
 .inner-container main li {
@@ -114,23 +135,57 @@ footer,
   color: #b4bac0;
 }
 
+/*Homework two CSS*/
+
+.text-container {
+  /* border: 1px solid orange; */
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+
+.text-container p {
+  margin-top: -1.75%;
+}
+.p5-container {
+  /* border: 1px solid red; */
+  height: 100%;
+  width: 50%;
+  float: right;
+}
+
+#sketch-one {
+  border: 5px inset #b4bac0;
+  width: 510px;
+  height: 510px;
+  margin-left: 1%;
+  margin-top: -1.75%;
+}
+
+#sketch-two {
+  border: 5px inset #b4bac0;
+  width: 510px;
+  height: 510px;
+  margin-left: 1%;
+  margin-top: 1.75%;
+}
+/*Footer*/
 .footer-p {
   /* border: orange 2px solid; */
   padding-top: 1%;
   height: 60px; /* Height of the footer */
 }
 
-.summary-context {
-  margin-left: 1%;
-  margin-top: -1%;
-  font-family: "Source Sans Pro";
-}
 .footer-p,
 .footer-p span {
   font-family: "Source Sans Pro";
   font-size: 12px;
   color: #b4bac0;
 }
+
+/*---------------Keys--------------------*/
+
+/*----------------Media Qs--------------------------*/
 @media screen and (max-width: 600px) {
   .typewrite {
     font-size: 26px;
@@ -141,7 +196,8 @@ footer,
     margin-top: -5%;
   }
 
-  .footer-p {
+  .footer-p,
+  .footer-p span {
     font-family: "Source Sans Pro";
     font-size: 6px;
   }
