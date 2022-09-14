@@ -1,3 +1,9 @@
+/* Resources:
+* https://www.youtube.com/watch?v=ktPnruyC6cc  --> info on sin waves
+
+
+*/
+
 //sketch one
 let sketchOne = function (p) {
   let rot = 0;
