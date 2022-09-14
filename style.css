@@ -24,6 +24,11 @@ footer,
   flex-direction: column;
 }
 
+button {
+  width: 50px;
+  height: 50px;
+}
+
 .footer {
   position: fixed;
   left: 0;
@@ -152,22 +157,26 @@ footer,
   height: 100%;
   width: 50%;
   float: right;
+  text-align: center;
 }
 
 #sketch-one {
   border: 5px inset #b4bac0;
   width: 510px;
   height: 510px;
-  margin-left: 1%;
-  margin-top: -1.75%;
+  /* margin-left: 1%; */
+  /* margin-top: -1.75%; */
+  margin: 0 auto;
 }
 
 #sketch-two {
   border: 5px inset #b4bac0;
   width: 510px;
   height: 510px;
-  margin-left: 1%;
-  margin-top: 1.75%;
+  /* margin-left: 1%; */
+  /* margin-top: 1.75%; */
+  margin: 0 auto;
+  margin-top: 2%;
 }
 /*Footer*/
 .footer-p {
