@@ -38,7 +38,7 @@ let sketchTwo = function (p) {
   };
 
   p.draw = () => {
-    p.background(18, 18, 18);
+    p.background(18);
     p.translate(p.width / 2, p.height / 2); //center
     p.noFill();
     for (let i = 0; i < 100; i++) {
@@ -59,12 +59,12 @@ new p5(sketchTwo, "sketch-two");
 //sketch three
 let sketchThree = function (p) {
   p.setup = () => {
-    p.createCanvas(500, 500);
+    p.createCanvas(750, 500);
     p.strokeWeight(0.1);
   };
 
   p.draw = () => {
-    p.background(4);
+    p.background(5);
     p.translate(p.width / 2, p.height / 2);
     p.noFill();
     p.stroke(150, 150, 150);
