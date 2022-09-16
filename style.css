@@ -33,6 +33,15 @@ button {
   height: 50px;
 }
 
+h2 a {
+  color: black;
+  transition: 200ms color ease-in;
+}
+
+h2 a:hover {
+  color: #b4bac0;
+}
+
 .footer {
   position: fixed;
   left: 0;
@@ -161,19 +170,26 @@ button {
   height: 100%;
   width: 50%;
   float: right;
-  text-align: center;
+  margin-top: 6%;
 }
 
 #sketch-one {
   border: 5px inset #b4bac0;
   width: 510px;
   height: 510px;
-  /* margin-left: 1%; */
-  /* margin-top: -1.75%; */
   margin: 0 auto;
 }
 
 #sketch-two {
+  border: 5px inset #b4bac0;
+  width: 510px;
+  height: 510px;
+  /* margin-left: 1%; */
+  /* margin-top: 1.75%; */
+  margin: 0 auto;
+  /* margin-top: 52%; */
+}
+#sketch-three {
   border: 5px inset #b4bac0;
   width: 510px;
   height: 510px;

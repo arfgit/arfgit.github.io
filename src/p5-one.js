@@ -1,8 +1,6 @@
 /* Resources:
-* https://www.youtube.com/watch?v=ktPnruyC6cc  --> info on sin waves
-
-
-*/
+ * https://www.youtube.com/watch?v=ktPnruyC6cc  --> info on sin waves
+ */
 
 //sketch one
 let sketchOne = function (p) {
@@ -43,7 +41,6 @@ let sketchTwo = function (p) {
     p.background(18, 18, 18);
     p.translate(p.width / 2, p.height / 2); //center
     p.noFill();
-    p.stroke(255);
     for (let i = 0; i < 100; i++) {
       p.push();
       p.rotate(p.sin(p.frameCount + i) * 100);
@@ -58,3 +55,25 @@ let sketchTwo = function (p) {
   };
 };
 new p5(sketchTwo, "sketch-two");
+
+//sketch three
+let sketchThree = function (p) {
+  p.setup = () => {
+    p.createCanvas(500, 500);
+    p.strokeWeight(0.1);
+  };
+
+  p.draw = () => {
+    p.background(4);
+    p.translate(p.width / 2, p.height / 2);
+    p.noFill();
+    p.stroke(150, 150, 150);
+    for (let i = 0; i < 400; i++) {
+      p.push();
+      p.rotate(p.sin(p.frameCount + i * 0.5) * 100);
+      p.ellipse(0, 0, 400 - i, 400 - i / p.TWO_PI);
+      p.pop();
+    }
+  };
+};
+new p5(sketchThree, "sketch-three");
