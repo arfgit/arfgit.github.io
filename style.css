@@ -28,6 +28,9 @@ footer,
   flex-direction: column;
 }
 
+.middle-wrapper {
+  padding-bottom: 2%;
+}
 button {
   width: 50px;
   height: 50px;
@@ -40,13 +43,6 @@ h2 a {
 
 h2 a:hover {
   color: #b4bac0;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
 }
 
 .typewrite {
@@ -198,7 +194,35 @@ h2 a:hover {
   /* margin-top: 1.75%; */
   margin-top: 6%;
 }
+
+/*Homework 3 Sketch CSS*/
+
+.img-container {
+  display: flex;
+  margin-bottom: 1%;
+}
+.img {
+  /* border: 2px solid red; */
+  width: 600px;
+  height: 400px;
+  margin-right: 1%;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+}
+#hw3-sketch {
+  /* border: solid red 2px; */
+  height: 800px;
+  width: 800px;
+  margin: 0 auto;
+}
 /*Footer*/
+footer {
+  border: solid red 2px;
+  text-align: center;
+}
 .footer-p {
   /* border: orange 2px solid; */
   padding-top: 1%;
