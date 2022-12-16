@@ -17,7 +17,6 @@ function setup() {
 
 function draw() {
   image(img2, 0, 0, width, height);
-
   //mouse eraser
   if (mouseIsPressed) {
     extraCanvas.line(pmouseX, pmouseY, mouseX, mouseY);
